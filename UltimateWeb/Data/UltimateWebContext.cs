@@ -16,5 +16,6 @@ namespace UltimateWeb.Data
 
         public DbSet<Aluno> Aluno { get; set; }
         public DbSet<Treinador> Treinador { get; set; }
+        public DbSet<Usuario> Usuario { get; set; }
     }
 }

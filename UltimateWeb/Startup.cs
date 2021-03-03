@@ -10,7 +10,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using UltimateWeb.Data;
-
+using UltimateWeb.Services;
 
 namespace UltimateWeb
 {
@@ -33,6 +33,8 @@ namespace UltimateWeb
                         builder => builder.MigrationsAssembly("UltimateWeb")
                     ));
 
+
+            services.AddScoped<UsuarioService>();
             
         }
 

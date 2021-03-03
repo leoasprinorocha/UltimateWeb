@@ -71,6 +71,25 @@ namespace UltimateWeb.Migrations
                     b.ToTable("Treinador");
                 });
 
+            modelBuilder.Entity("UltimateWeb.Models.Usuario", b =>
+                {
+                    b.Property<string>("Username")
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<int>("Permissoes")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Senha")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.HasKey("Username");
+
+                    b.ToTable("Usuario");
+                });
+
             modelBuilder.Entity("UltimateWeb.Models.Aluno", b =>
                 {
                     b.HasOne("UltimateWeb.Models.Treinador", null)

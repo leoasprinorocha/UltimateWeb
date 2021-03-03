@@ -23,7 +23,7 @@ namespace UltimateWeb.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Galeria()
         {
             return View();
         }
