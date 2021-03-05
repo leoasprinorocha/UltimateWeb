@@ -35,6 +35,21 @@ namespace UltimateWeb.Services
             
             
         }
+
+        public bool CreateUser(string user, string senha, string email, int permissao)
+        {
+            try
+            {
+                var usuario = new Usuario(user, senha, email, permissao);
+                _context.Usuario.Add(usuario);
+                _context.SaveChanges();
+                return true;
+            }
+            catch(Exception e)
+            {
+                return false;
+            }
+        }
     }
 
 

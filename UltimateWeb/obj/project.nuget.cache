@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bo4AYVW2+mYqd4RzxWnJA7iuMezIjjXTqnYFGRPxDB6SAa56a/IG2QyMxw0EWpv7e06QZZ9rZaTAVrJdJ2TbBg==",
+  "dgSpecHash": "tanLC7MoBP4OuNSSqIXdMdh3/GaOPx9IY+4git16/g/o8nWHDiuDDSyyRaQ2iKz6ms8LozvoPOxXnagzXhNSUQ==",
   "success": true,
-  "projectFilePath": "C:\\repositorio_testes\\UltimateWeb\\UltimateWeb\\UltimateWeb.csproj",
+  "projectFilePath": "C:\\repositorio_testes\\UltimateWeb\\UltimateWeb\\UltimateWeb\\UltimateWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aspri\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\aspri\\.nuget\\packages\\devart.data\\5.0.2628\\devart.data.5.0.2628.nupkg.sha512",

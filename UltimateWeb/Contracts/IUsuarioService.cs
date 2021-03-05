@@ -8,5 +8,6 @@ namespace UltimateWeb.Contracts
     public interface IUsuarioService
     {
         public bool Login(string userName, string senha);
+        public bool CreateUser(string userName, string senha, string email, int permissao);
     }
 }

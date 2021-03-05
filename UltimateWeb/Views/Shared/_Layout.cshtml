@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light  border-bottom box-shadow mb-3" id="navBarPrincipal" style="background-color: lightcoral;">
+        <nav class="navbar navbar-expand-sm navbar-dark  border-bottom bg-transparent" id="navBarPrincipal" style="background-color: lightcoral;">
             <div class="container">
                 <a class="navbar-dark" asp-area="" asp-controller="Home" asp-action="Index">UltimateWeb</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -30,10 +30,13 @@
                         <li class="nav-item">
                             <b><a class="nav-link text-dark" asp-area="" asp-controller="Aluno" asp-action="Create">CADASTRAMENTO DE ATLETA</a></b>
                         </li>
-
+                       
                         <li class="nav-item">
-                            <b><a class="nav-link text-body" style="margin-left: 60px; font-size: 12px;" asp-area="" asp-controller="Aluno" asp-action="Create">LOGIN</a></b>
+
+                            <b><a class="nav-link text-body" style="margin-left: 60px; font-size: 12px;" asp-controller="Usuario" asp-action="Index">LOGIN</a></b>
+
                         </li>
+                        
                     </ul>
                 </div>
             </div>

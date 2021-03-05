@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\repositorio_testes\\UltimateWeb\\UltimateWeb\\UltimateWeb.csproj": {}
+    "C:\\repositorio_testes\\UltimateWeb\\UltimateWeb\\UltimateWeb\\UltimateWeb.csproj": {}
   },
   "projects": {
-    "C:\\repositorio_testes\\UltimateWeb\\UltimateWeb\\UltimateWeb.csproj": {
+    "C:\\repositorio_testes\\UltimateWeb\\UltimateWeb\\UltimateWeb\\UltimateWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\repositorio_testes\\UltimateWeb\\UltimateWeb\\UltimateWeb.csproj",
+        "projectUniqueName": "C:\\repositorio_testes\\UltimateWeb\\UltimateWeb\\UltimateWeb\\UltimateWeb.csproj",
         "projectName": "UltimateWeb",
-        "projectPath": "C:\\repositorio_testes\\UltimateWeb\\UltimateWeb\\UltimateWeb.csproj",
+        "projectPath": "C:\\repositorio_testes\\UltimateWeb\\UltimateWeb\\UltimateWeb\\UltimateWeb.csproj",
         "packagesPath": "C:\\Users\\aspri\\.nuget\\packages\\",
-        "outputPath": "C:\\repositorio_testes\\UltimateWeb\\UltimateWeb\\obj\\",
+        "outputPath": "C:\\repositorio_testes\\UltimateWeb\\UltimateWeb\\UltimateWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

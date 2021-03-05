@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using UltimateWeb.Data;
 using UltimateWeb.Services;
+using UltimateWeb.Contracts;
 
 namespace UltimateWeb
 {
@@ -35,6 +36,7 @@ namespace UltimateWeb
 
 
             services.AddScoped<UsuarioService>();
+            
             
         }
 

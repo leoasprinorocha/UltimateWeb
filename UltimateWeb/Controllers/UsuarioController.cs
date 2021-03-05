@@ -4,14 +4,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using UltimateWeb.Contracts;
+using UltimateWeb.Models;
+using UltimateWeb.Services;
 
 namespace UltimateWeb.Controllers
 {
     public class UsuarioController : Controller
     {
-        private IUsuarioService _userService;
+        private readonly UsuarioService _userService;
 
-        public UsuarioController(IUsuarioService usuarioService)
+        public UsuarioController(UsuarioService usuarioService)
         {
             _userService = usuarioService;
         }
@@ -19,31 +21,52 @@ namespace UltimateWeb.Controllers
 
 
         [HttpGet]
-        public IActionResult Login()
+        public ActionResult Index()
         {
             return View();
         }
 
         [HttpPost]
-        public IActionResult Login(string user, string senha)
+        public ActionResult Login(string user, string senha)
         {
             var valida = _userService.Login(user, senha);
             
             TempData["dadosLogin"] = valida;
+            TempData["nomeUser"] = user;
 
             if (valida)
-            {
-                return RedirectToAction();
-            }
+                return RedirectToAction("Logado", "Usuario");
 
+            else
+            {
+              
+                return RedirectToAction("Index", "Usuario");
+            }
         }
 
 
         [HttpGet]
 
-        public IActionResult Logado()
+        public IActionResult Logado(Usuario user)
+        {
+            return View(user);
+        }
+
+
+        [HttpGet]
+        public IActionResult CreateUser()
         {
             return View();
+        }
+
+        [HttpPost]
+        public bool CreateUser(string user, string senha, string email, int permissao)
+        {
+            var valida = _userService.CreateUser(user, senha, email, permissao);
+            if (valida)
+                return true;
+            else
+                return false;
         }
     }
 }
